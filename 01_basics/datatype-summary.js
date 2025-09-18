@@ -33,6 +33,8 @@ const myFunction = function(){
 
 console.log(typeof bigNumber)
 
+// the type of operator. focus and see it for interview
+
 // ___________________________________________________________________________________________________________________________________
 
 
