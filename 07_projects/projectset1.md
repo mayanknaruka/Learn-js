@@ -164,7 +164,7 @@ function newGame() {
 }
 
 ```
-## Project 5 Solution
+## Project 5 Solution done
 ```
 const insert = document.getElementById('insert');
 
