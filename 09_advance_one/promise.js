@@ -42,7 +42,7 @@ const promiseFour = new Promise(function(resolve, reject){
     }, 1000)
 })
 
- promiseFour
+promiseFour
  .then((user) => {
     console.log(user);
     return user.username
@@ -51,8 +51,6 @@ const promiseFour = new Promise(function(resolve, reject){
 }).catch(function(error){
     console.log(error);
 }).finally(() => console.log("The promise is either resolved or rejected"))
-
-
 
 const promiseFive = new Promise(function(resolve, reject){
     setTimeout(function(){
@@ -76,18 +74,19 @@ async function consumePromiseFive(){
 
 consumePromiseFive()
 
-// async function getAllUsers(){
-//     try {
-//         const response = await fetch('https://jsonplaceholder.typicode.com/users')
+ async function getAllUsers(){
+    try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users')
 
-//         const data = await response.json()
-//         console.log(data);
-//     } catch (error) {
-//         console.log("E: ", error);
-//     }
-// }
+        const data = await response.json()
+        console.log(data);
+    } catch (error) {
+        console.log("E: ", error);
+    }
+}
 
-//getAllUsers()
+getAllUsers()
+
 
 fetch('https://api.github.com/users/hiteshchoudhary')
 .then((response) => {
@@ -99,4 +98,3 @@ fetch('https://api.github.com/users/hiteshchoudhary')
 .catch((error) => console.log(error))
 
 // promise.all
-// yes this is also available, kuch reading aap b kro.
